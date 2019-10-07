@@ -4,6 +4,7 @@ class CreateSchedules < ActiveRecord::Migration[5.2]
       t.string :user_id, null: false
       t.datetime :start_at, null:false
       t.datetime :finish_at, null:false
+      t.string :locate, null:false
       t.string :comment
       t.timestamps
     end

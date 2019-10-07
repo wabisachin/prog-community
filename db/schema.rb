@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 2019_10_07_060440) do
     t.string "user_id", null: false
     t.datetime "start_at", null: false
     t.datetime "finish_at", null: false
+    t.string "locate", null: false
     t.string "comment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
