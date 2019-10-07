@@ -10,6 +10,14 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <!--ヘッダー-->
+      <div class="header f-container">
+        <%= render 'layouts/header' %> 
+      </div>
+      <!--テンプレート-->
+      <%= yield %>
+    </div>
+    
   </body>
 </html>

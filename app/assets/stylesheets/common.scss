@@ -1,0 +1,15 @@
+// 各ファイル共通CSS
+
+.f-container {
+    display : flex;
+    flex-direction: row-reverse;
+}
+
+.f-item {
+    margin-left:20px;
+}
+
+// ヘッダーのCSS
+.header {
+    height:50px;
+}
