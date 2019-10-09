@@ -226,12 +226,9 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap (>= 1.1.0)
-<<<<<<< HEAD
-  bootstrap (= 4.1.1)
-=======
+
   bootstrap (~> 4.1.1)
   bootstrap4-datetime-picker-rails
->>>>>>> create_schedule
   byebug
   capybara (>= 2.15)
   chromedriver-helper
