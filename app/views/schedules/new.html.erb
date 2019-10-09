@@ -11,9 +11,9 @@
             </div>
             <div class="field form-group">
                 <%= f.label "日時", :start_at %>
-                <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
-                    <%= f.text_field :start_at, class:"form-control datetimepicker-input", data: {target: "#datetimepicker1"} %>
-                    <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
+                    <%= f.text_field :start_at, class:"form-control datetimepicker-input", data: {target: "#datetimepicker4"} %>
+                    <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
                         <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                     </div>
                 </div>
@@ -24,34 +24,21 @@
             </div>
             <div class="field form-group">
                 <%= f.label "コメント"  %>
-                <%= f.text_field :comment, class:"form-group" %>
+                <%= f.text_field :comment, class:"form-control" %>
             </div>
             <div class="field">
-                <%= f.submit "決定", class: "btn btn-primary" %>
+                <%= f.submit "決定", class: "btn btn-primary form-control" %>
             </div>
             
         <% end %>
         <script type="text/javascript">
             $(function () {
-                $('#datetimepicker1').datetimepicker();
+                $('#datetimepicker4').datetimepicker({
+                    format: 'L'
+                });
             });
         </script>
     </div>
     
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-sm-6">
-            <div class="form-group">
-                <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
-                    <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
-                    <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
-                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-</div>
