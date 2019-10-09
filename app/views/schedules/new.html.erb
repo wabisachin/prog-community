@@ -1,0 +1,57 @@
+<div class="new-schedule-registraiton">
+    <h3>勉強会の追加</h3>
+    <div class="form">
+        <%= form_for @schedule do |f| %>
+            <div class="field form-group">
+                <%=  f.hidden_field :user_id, value: current_user.id %>
+            </div>
+            <div class="field form-group">
+                <%= f.label :location %>
+                <%= f.text_field :location, class:"form-control" %>
+            </div>
+            <div class="field form-group">
+                <%= f.label "日時", :start_at %>
+                <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                    <%= f.text_field :start_at, class:"form-control datetimepicker-input", data: {target: "#datetimepicker1"} %>
+                    <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                    </div>
+                </div>
+            </div>
+                
+                <%#= f.text_field :start_at, class: "form-control datetimepicker-input", id: "start_at", data: {toggle: "datetimepicker", target: "#start_at"} %>
+                <%#= f.time_select :start_at, {}, class: 'form-control' %>
+            </div>
+            <div class="field form-group">
+                <%= f.label "コメント"  %>
+                <%= f.text_field :comment, class:"form-group" %>
+            </div>
+            <div class="field">
+                <%= f.submit "決定", class: "btn btn-primary" %>
+            </div>
+            
+        <% end %>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
+    </div>
+    
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                    <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
+                    <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>

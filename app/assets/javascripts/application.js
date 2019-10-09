@@ -12,6 +12,24 @@
 //
 //= require rails-ujs
 //= require activestorage
+//= require jquery
+//= require rails-ujs
 //= require turbolinks
 //= require bootstrap
+//= require moment
+//= require moment/ja.js
+//= require tempusdominus-bootstrap-4.js
 //= require_tree .
+
+// $(document).ready(function(){
+//   $('f-item').click(function(){
+//       $('f-item').css('color','red');
+//   })
+// });
+
+$(document).on('turbolinks:load', function() {
+    $('p').click(function(){
+      $('p').css('color','red');
+    })
+    
+});
