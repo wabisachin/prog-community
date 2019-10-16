@@ -1,6 +1,8 @@
 <% if user_signed_in? %>
     <%=  link_to "ログアウト",destroy_user_session_path, method: :delete, class:"f-item" %>
     <%=  link_to "勉強会登録", new_schedule_path %>
+    <%=  link_to "勉強会一覧", schedules_path %>
+    
     <p class="sample">fdsafa</p>
 <% else %>
     <%=  link_to "新規登録",new_user_registration_path, class:"f-item" %>

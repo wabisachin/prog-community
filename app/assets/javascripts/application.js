@@ -14,11 +14,13 @@
 //= require activestorage
 //= require jquery
 //= require rails-ujs
-//= require turbolinks
 //= require bootstrap
 //= require moment
 //= require moment/ja.js
+//= require fullcalendar
+//= require fullcalendar/lang/ja
 //= require tempusdominus-bootstrap-4.js
+//= require turbolinks
 //= require_tree .
 
 // $(document).ready(function(){
@@ -30,6 +32,17 @@
 $(document).on('turbolinks:load', function() {
     $('p').click(function(){
       $('p').css('color','red');
+    })
+    
+    $('#calendar').fullCalendar({
+      header:{
+        // left: 'prev, next, today',
+        // center: 'title',
+        // right: 'listMonth'
+        center:'prev, next, today',
+        right: 'listMonth'
+        
+      }
     })
     
 });

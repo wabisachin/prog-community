@@ -77,4 +77,5 @@ gem 'bootstrap', '~> 4.1.1'
 gem "bootstrap4-datetime-picker-rails"
 gem "font-awesome-rails"
 gem 'momentjs-rails'
+gem 'fullcalendar-rails'
 gem 'jquery-rails', '4.3.1'

@@ -12,10 +12,11 @@ class SchedulesController < ApplicationController
     end
     
     def show 
-        @schedule =  Schedule.all
+        
     end
     
     def index
+        @schedules =  Schedule.order("start_at ASC")
     end
     # ここからprivate
     private
