@@ -73,7 +73,7 @@ group :production do
   gem 'pg'
 end
 
-gem 'bootstrap', '~> 4.1.1'
+gem 'bootstrap', '~> 4.3.1'
 gem "bootstrap4-datetime-picker-rails"
 gem "font-awesome-rails"
 gem 'momentjs-rails'
